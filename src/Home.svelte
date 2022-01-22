@@ -1,17 +1,25 @@
 <main>
-	<h1>Home</h1>
+	<div>
+		<img class="portrait" src="assets/images/Portrait.png" alt="Portrait"/>
+		<h1>Acerola</h1>
+	</div>
 </main>
 
 <style>
 	main {
-		width: 100%;
 		height: 100%;
+		width: 100%;
 		background-color: #a4958e;
 	}
 
-	h1 {
-		color: #FFFFFF;
-		font-size: 4em;
-		font-weight: 100;
+	div {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.portrait {
+		height: 90%;
 	}
 </style>
