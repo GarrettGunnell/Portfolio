@@ -19,7 +19,18 @@
 		justify-content: center;
 	}
 
+	h1 {
+		position: absolute;
+		left: 55%;
+		bottom: 60%;
+		font-size: 10vh;
+		color: #FFFFFF;
+		-webkit-text-stroke: 0.2vh #a4958e;
+		text-shadow: 0.5vh 0.5vh #984652;
+	}
+
 	.portrait {
 		height: 90%;
+		padding-right: 5%;
 	}
 </style>
