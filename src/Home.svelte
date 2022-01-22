@@ -1,7 +1,10 @@
 <main>
 	<div>
 		<img class="portrait" src="assets/images/Portrait.png" alt="Portrait"/>
-		<h1>Acerola</h1>
+		<div class="title">
+			<h1>Acerola</h1>
+			<p>Technical Artist | Graphics Programmer | Game Developer</p>
+		</div>
 	</div>
 </main>
 
@@ -19,18 +22,36 @@
 		justify-content: center;
 	}
 
-	h1 {
+	.title {
 		position: absolute;
-		left: 55%;
-		bottom: 60%;
+		top: 25%;
+		height: 20%;
+		left: 52%;
+		display: inline-block;
+		text-align: center;
+	}
+
+	p {
+		font-size: 2vh;
+		font-family: 'Kozuka Mincho Pro';
+		src: url('/assets/fonts/KozMinPro.otf') format('otf');
+		font-weight: 300;
+		color: #74303a;
+	}
+
+	h1 {
 		font-size: 10vh;
+		font-family: 'Kozuka Mincho Pro';
+		src: url('/assets/fonts/KozMinPro.otf') format('otf');
+		font-weight: 600;
 		color: #FFFFFF;
 		-webkit-text-stroke: 0.2vh #a4958e;
-		text-shadow: 0.5vh 0.5vh #984652;
+		text-shadow: 0.5vh 0.35vh #984652;
+		margin-bottom: -10%;
 	}
 
 	.portrait {
 		height: 90%;
-		padding-right: 5%;
+		padding-right: 6.5%;
 	}
 </style>
