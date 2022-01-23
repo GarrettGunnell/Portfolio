@@ -1,3 +1,34 @@
+<script>
+	let youtubeIconSource = "assets/images/youtube-icon.png";
+	let twitterIconSource = "assets/images/twitter-icon.png";
+	let twitchIconSource = "assets/images/twitch-icon.png";
+
+	function youtubeHoverIn(e) {
+		youtubeIconSource = "assets/images/youtube-icon-stroke.png";
+	}
+	
+	function youtubeHoverOut(e) {
+		youtubeIconSource = "assets/images/youtube-icon.png";
+	}
+
+	function twitterHoverIn(e) {
+		twitterIconSource = "assets/images/twitter-icon-stroke.png";
+	}
+	
+	function twitterHoverOut(e) {
+		twitterIconSource = "assets/images/twitter-icon.png";
+	}
+
+	function twitchHoverIn(e) {
+		twitchIconSource = "assets/images/twitch-icon-stroke.png";
+	}
+	
+	function twitchHoverOut(e) {
+		twitchIconSource = "assets/images/twitch-icon.png";
+	}
+</script>
+
+
 <main>
 	<div class="contents">
 		<img class="portrait" src="assets/images/Portrait.png" alt="Portrait"/>
@@ -5,9 +36,9 @@
 			<h1>Acerola</h1>
 			<p>Technical Artist | Graphics Programmer | Game Developer</p>
 			<div class="social-media">
-				<img class="social-icon" src="assets/images/youtube-icon.png" alt="Youtube"/>
-				<img class="social-icon" src="assets/images/twitter-icon.png" alt="Twitter"/>
-				<img class="social-icon" src="assets/images/twitch-icon.png" alt="Twitch"/>
+				<img class="social-icon" src={youtubeIconSource} alt="Youtube" on:mouseover={youtubeHoverIn} on:mouseout={youtubeHoverOut}/>
+				<img class="social-icon" src={twitterIconSource} alt="Twitter" on:mouseover={twitterHoverIn} on:mouseout={twitterHoverOut}/>
+				<img class="social-icon" src={twitchIconSource} alt="Twitch" on:mouseover={twitchHoverIn} on:mouseout={twitchHoverOut}/>
 			</div>
 		</div>
 	</div>
@@ -42,6 +73,7 @@
 		src: url('/assets/fonts/KozMinPro.otf') format('otf');
 		font-weight: 300;
 		color: #74303a;
+		margin-top: 1%;
 	}
 
 	h1 {
@@ -67,10 +99,11 @@
 	}
 
 	.social-icon {
-		height: 4vh;
+		height: 4.5vh;
 		width: auto;
 		margin-top: 1vh;
 		margin-left: 0.75vw;
 		margin-right: 0.75vw;
+		cursor: pointer;
 	}
 </style>
