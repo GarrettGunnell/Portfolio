@@ -36,9 +36,15 @@
 			<h1>Acerola</h1>
 			<p>Technical Artist | Graphics Programmer | Game Developer</p>
 			<div class="social-media">
-				<img class="social-icon" src={youtubeIconSource} alt="Youtube" on:mouseover={youtubeHoverIn} on:mouseout={youtubeHoverOut}/>
-				<img class="social-icon" src={twitterIconSource} alt="Twitter" on:mouseover={twitterHoverIn} on:mouseout={twitterHoverOut}/>
-				<img class="social-icon" src={twitchIconSource} alt="Twitch" on:mouseover={twitchHoverIn} on:mouseout={twitchHoverOut}/>
+				<a href="https://www.youtube.com/c/acerola_t" target="_blank" on:mouseover={youtubeHoverIn} on:mouseout={youtubeHoverOut}>
+					<img class="social-icon" src={youtubeIconSource} alt="Youtube"/>
+				</a>
+				<a href="https://www.twitter.com/acerola_t" target="_blank" on:mouseover={twitterHoverIn} on:mouseout={twitterHoverOut}>
+					<img class="social-icon" src={twitterIconSource} alt="Twitter"/>
+				</a>
+				<a href="https://www.twitch.com/acerola_t" target="_blank" on:mouseover={twitchHoverIn} on:mouseout={twitchHoverOut}>
+					<img class="social-icon" src={twitchIconSource} alt="Twitch"/>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -104,6 +110,9 @@
 		margin-top: 1vh;
 		margin-left: 0.75vw;
 		margin-right: 0.75vw;
+	}
+
+	a {
 		cursor: pointer;
 	}
 </style>
