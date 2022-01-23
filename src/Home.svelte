@@ -1,9 +1,14 @@
 <main>
-	<div>
+	<div class="contents">
 		<img class="portrait" src="assets/images/Portrait.png" alt="Portrait"/>
 		<div class="title">
 			<h1>Acerola</h1>
 			<p>Technical Artist | Graphics Programmer | Game Developer</p>
+			<div class="social-media">
+				<img class="social-icon" src="assets/images/youtube-icon.png" alt="Youtube"/>
+				<img class="social-icon" src="assets/images/twitter-icon.png" alt="Twitter"/>
+				<img class="social-icon" src="assets/images/twitch-icon.png" alt="Twitch"/>
+			</div>
 		</div>
 	</div>
 </main>
@@ -15,7 +20,7 @@
 		background-color: #a4958e;
 	}
 
-	div {
+	.contents {
 		height: 100%;
 		display: flex;
 		align-items: center;
@@ -53,5 +58,19 @@
 	.portrait {
 		height: 90%;
 		padding-right: 6.5%;
+	}
+
+	.social-media {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.social-icon {
+		height: 4vh;
+		width: auto;
+		margin-top: 1vh;
+		margin-left: 0.75vw;
+		margin-right: 0.75vw;
 	}
 </style>
