@@ -74,27 +74,27 @@
 	}
 
 	p {
-		font-size: 2vh;
-		font-family: 'Kozuka Mincho Pro';
-		src: url('/assets/fonts/KozMinPro.otf') format('otf');
-		font-weight: 300;
+		font-size: 2.05vh;
+		font-family: "Noto Serif";
 		color: #74303a;
 		margin-top: 1%;
+		margin-bottom: 1%;
 	}
 
 	h1 {
-		font-size: 10vh;
-		font-family: 'Kozuka Mincho Pro';
-		src: url('/assets/fonts/KozMinPro.otf') format('otf');
-		font-weight: 600;
+		font-size: 11vh;
+		font-family: 'Libre Baskerville', serif;
+		transform: scaleX(0.9);
+		letter-spacing: 0.1vh;
+		font-weight: 400;
 		color: #FFFFFF;
 		-webkit-text-stroke: 0.2vh #a4958e;
 		text-shadow: 0.5vh 0.35vh #984652;
-		margin-bottom: -10%;
+		height: 60%;
 	}
 
 	.portrait {
-		height: 90%;
+		height: 90vh;
 		padding-right: 6.5%;
 	}
 
