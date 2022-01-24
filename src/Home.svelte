@@ -75,10 +75,10 @@
 
 	p {
 		font-size: 2.05vh;
-		font-family: "Noto Serif";
-		color: #74303a;
+		font-family: "Noto Serif JP";
+		color: #752b36;
 		margin-top: 1%;
-		margin-bottom: 1%;
+		margin-bottom: 3%;
 	}
 
 	h1 {
