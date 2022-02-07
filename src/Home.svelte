@@ -34,7 +34,7 @@
 		<img class="portrait" src="assets/images/Portrait.png" alt="Portrait"/>
 		<div class="title">
 			<h1>Acerola</h1>
-			<p>Technical Artist | Graphics Programmer | Game Developer</p>
+			<p>Technical Artist :: Graphics Programmer :: Game Developer</p>
 			<div class="social-media">
 				<a href="https://www.youtube.com/c/acerola_t" target="_blank" on:mouseover={youtubeHoverIn} on:mouseout={youtubeHoverOut}>
 					<img class="social-icon" src={youtubeIconSource} alt="Youtube"/>
@@ -67,7 +67,7 @@
 	.title {
 		position: absolute;
 		top: 25%;
-		height: 20%;
+		height: 50%;
 		left: 52%;
 		display: inline-block;
 		text-align: center;
@@ -78,7 +78,7 @@
 		font-family: "Noto Serif JP";
 		color: #752b36;
 		margin-top: 1%;
-		margin-bottom: 3%;
+		margin-bottom: 1%;
 	}
 
 	h1 {
@@ -90,7 +90,7 @@
 		color: #FFFFFF;
 		-webkit-text-stroke: 0.2vh #a4958e;
 		text-shadow: 0.5vh 0.35vh #984652;
-		height: 60%;
+		height: 25%;
 	}
 
 	.portrait {
