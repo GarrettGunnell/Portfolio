@@ -2,9 +2,10 @@
 	let youtubeIconSource = "assets/images/youtube-icon.png";
 	let twitterIconSource = "assets/images/twitter-icon.png";
 	let twitchIconSource = "assets/images/twitch-icon.png";
+	let githubIconSource = "assets/images/github-icon.png";
 
 	function youtubeHoverIn(e) {
-		youtubeIconSource = "assets/images/youtube-icon-stroke.png";
+		youtubeIconSource = "assets/images/youtube-icon-hover.png";
 	}
 	
 	function youtubeHoverOut(e) {
@@ -12,7 +13,7 @@
 	}
 
 	function twitterHoverIn(e) {
-		twitterIconSource = "assets/images/twitter-icon-stroke.png";
+		twitterIconSource = "assets/images/twitter-icon-hover.png";
 	}
 	
 	function twitterHoverOut(e) {
@@ -20,11 +21,19 @@
 	}
 
 	function twitchHoverIn(e) {
-		twitchIconSource = "assets/images/twitch-icon-stroke.png";
+		twitchIconSource = "assets/images/twitch-icon-hover.png";
 	}
 	
 	function twitchHoverOut(e) {
 		twitchIconSource = "assets/images/twitch-icon.png";
+	}
+
+	function githubHoverIn(e) {
+		githubIconSource = "assets/images/github-icon-hover.png";
+	}
+	
+	function githubHoverOut(e) {
+		githubIconSource = "assets/images/github-icon.png";
 	}
 </script>
 
@@ -44,6 +53,9 @@
 				</a>
 				<a href="https://www.twitch.com/acerola_t" target="_blank" on:mouseover={twitchHoverIn} on:mouseout={twitchHoverOut}>
 					<img class="social-icon" src={twitchIconSource} alt="Twitch"/>
+				</a>
+				<a href="https://github.com/GarrettGunnell" target="_blank" on:mouseover={githubHoverIn} on:mouseout={githubHoverOut}>
+					<img class="social-icon" src={githubIconSource} alt="Github"/>
 				</a>
 			</div>
 		</div>
