@@ -1,42 +1,3 @@
-<script>
-	let youtubeIconSource = "assets/images/youtube-icon.png";
-	let twitterIconSource = "assets/images/twitter-icon.png";
-	let twitchIconSource = "assets/images/twitch-icon.png";
-	let githubIconSource = "assets/images/github-icon.png";
-
-	function youtubeHoverIn(e) {
-		youtubeIconSource = "assets/images/youtube-icon-hover.png";
-	}
-	
-	function youtubeHoverOut(e) {
-		youtubeIconSource = "assets/images/youtube-icon.png";
-	}
-
-	function twitterHoverIn(e) {
-		twitterIconSource = "assets/images/twitter-icon-hover.png";
-	}
-	
-	function twitterHoverOut(e) {
-		twitterIconSource = "assets/images/twitter-icon.png";
-	}
-
-	function twitchHoverIn(e) {
-		twitchIconSource = "assets/images/twitch-icon-hover.png";
-	}
-	
-	function twitchHoverOut(e) {
-		twitchIconSource = "assets/images/twitch-icon.png";
-	}
-
-	function githubHoverIn(e) {
-		githubIconSource = "assets/images/github-icon-hover.png";
-	}
-	
-	function githubHoverOut(e) {
-		githubIconSource = "assets/images/github-icon.png";
-	}
-</script>
-
 
 <main>
 	<div class="contents">
@@ -45,17 +6,17 @@
 			<h1>Acerola</h1>
 			<p>Technical Artist :: Graphics Programmer :: Game Developer</p>
 			<div class="social-media">
-				<a href="https://www.youtube.com/c/acerola_t" target="_blank" on:mouseover={youtubeHoverIn} on:mouseout={youtubeHoverOut}>
-					<img class="social-icon" src={youtubeIconSource} alt="Youtube"/>
+				<a href="https://www.youtube.com/c/acerola_t" target="_blank">
+					<img class="social-icon" src="assets/images/youtube-icon.png" alt="Youtube"/>
 				</a>
-				<a href="https://www.twitter.com/acerola_t" target="_blank" on:mouseover={twitterHoverIn} on:mouseout={twitterHoverOut}>
-					<img class="social-icon" src={twitterIconSource} alt="Twitter"/>
+				<a href="https://www.twitter.com/acerola_t" target="_blank">
+					<img class="social-icon" src="assets/images/twitter-icon.png" alt="Twitter"/>
 				</a>
-				<a href="https://www.twitch.com/acerola_t" target="_blank" on:mouseover={twitchHoverIn} on:mouseout={twitchHoverOut}>
-					<img class="social-icon" src={twitchIconSource} alt="Twitch"/>
+				<a href="https://www.twitch.com/acerola_t" target="_blank">
+					<img class="social-icon" src="assets/images/twitch-icon.png" alt="Twitch"/>
 				</a>
-				<a href="https://github.com/GarrettGunnell" target="_blank" on:mouseover={githubHoverIn} on:mouseout={githubHoverOut}>
-					<img class="social-icon" src={githubIconSource} alt="Github"/>
+				<a href="https://github.com/GarrettGunnell" target="_blank">
+					<img class="social-icon" src="assets/images/github-icon.png" alt="Github"/>
 				</a>
 			</div>
 		</div>
@@ -89,8 +50,7 @@
 		font-size: 2.05vh;
 		font-family: "Noto Serif JP";
 		color: #752b36;
-		margin-top: 1%;
-		margin-bottom: 1%;
+		margin-bottom: 2%;
 	}
 
 	h1 {
@@ -122,9 +82,17 @@
 		margin-top: 1vh;
 		margin-left: 0.75vw;
 		margin-right: 0.75vw;
+		filter: invert(89%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(108%) contrast(103%);
 	}
 
-	a {
+	.social-icon:hover {
+		height: 4.5vh;
+		width: auto;
+		margin-top: 1vh;
+		margin-left: 0.75vw;
+		margin-right: 0.75vw;
+		filter: invert(29%) sepia(38%) saturate(887%) hue-rotate(302deg) brightness(101%) contrast(83%);
 		cursor: pointer;
 	}
+
 </style>
