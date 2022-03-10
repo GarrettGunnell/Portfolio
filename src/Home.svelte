@@ -1,7 +1,14 @@
+<script>
+	import { onMount } from 'svelte';
+
+	let loaded = false;
+	onMount(() => { loaded = true; })
+</script>
+
 
 <main>
 	<div class="contents">
-		<img class="portrait" src="assets/images/Portrait.png" alt="Portrait"/>
+		<img class="portrait" src="assets/images/Portrait.jpg" alt="Portrait"/>
 		<div class="title">
 			<h1>Acerola</h1>
 			<p>Technical Artist :: Graphics Programmer :: Game Developer</p>
@@ -82,7 +89,6 @@
 		margin-top: 1vh;
 		margin-left: 0.75vw;
 		margin-right: 0.75vw;
-		filter: invert(89%) sepia(100%) saturate(0%) hue-rotate(21deg) brightness(108%) contrast(103%);
 	}
 
 	.social-icon:hover {
